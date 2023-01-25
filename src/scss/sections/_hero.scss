@@ -1,0 +1,212 @@
+@use "../abstracts/variables";
+
+/* Section Specification */
+.section--hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  background: radial-gradient(ellipse at center, #1b2735 0%, variables.$clr-dark 75%);
+  min-height: 85%;
+  margin-bottom: 2em;
+}
+@media (max-width: 1440px) {
+  .section--hero {
+    gap: 4em;
+  }
+}
+@media (max-width: 1200px) {
+  .section--hero {
+    margin-top: 2em;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+/* Hero Title */
+.hero__title {
+  margin-bottom: 2.6em;
+}
+@media (max-width: 1200px) {
+  .hero__title {
+    text-align: center;
+  }
+}
+
+/* Large Heading with special letter ;) */
+.hero__heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+
+  .special-letter {
+    color: variables.$clr-accent;
+    cursor: pointer;
+  }
+
+  .active {
+    animation: flicker 3s linear infinite;
+  }
+}
+@media (max-width: 680px) {
+  .hero__heading {
+    font-size: 3.5rem;
+    letter-spacing: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .hero__heading {
+    font-size: 2.25rem;
+  }
+}
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(#fff, .4),
+                 1px -1px 0 rgba(#fff, .4),
+                 -1px 1px 0 rgba(#fff, .4),
+                 1px 1px 0 rgba(#fff, .4), 0 -2px 8px,
+                 0 0 2px, 0 0 5px variables.$clr-accent,
+                 0 0 15px variables.$clr-secondary,
+                 0 0 2px variables.$clr-accent,
+                 0 2px 3px #000;
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+.word span:nth-child(3).active {
+  animation: falling 2s ease-out;
+  transform-origin: bottom center;
+}
+
+/* Title Separator */
+.hero__separator {
+  position: relative;
+  height: 75px;
+}
+
+.hero__separator-line {
+  background: variables.$clr-accent;
+  position: absolute;
+  height: 5px;
+  width: 160px;
+  border-radius: 15px;
+}
+
+.hero__separator-line:last-child {
+  top: 20px;
+  left: 70px;
+}
+@media (max-width: 1200px) {
+  .hero__separator {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero__separator-line:first-child {
+    width: 200px;
+  }
+  .hero__separator-line:last-child {
+    left: unset;
+  }
+}
+@media (max-width: 680px) {
+  .hero__separator {
+    height: 55px;
+  }
+}
+@media (max-width: 425px) {
+  .hero__separator-line:first-child {
+    width: 150px;
+  }
+  .hero__separator-line:last-child {
+    width: 110px;
+  }
+}
+
+/* Title Description */
+.hero__description {
+  font-weight: normal;
+  letter-spacing: 2px;
+
+  &::before, &::after {
+    color: variables.$clr-secondary;
+    padding: 0 .4em;
+    animation: blink 2s linear infinite;
+  }
+
+  &::before {
+    content: '{';
+  }
+
+  &::after {
+    content: '}';
+  }
+}
+@media (max-width: 680px) {
+  .hero__description {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 425px) {
+  .hero__description {
+    font-size: 1rem;
+  }
+}
+
+@keyframes blink {
+  35% {
+    opacity: .1;
+  }
+}
+
+/* SCROLL DOWN ANIMATION */
+.mouse__scroll-down {
+  position: absolute;
+  bottom: 1.6em;
+  left: 50%;
+  height: 45px;
+  width: 25px;
+  border: 2px solid variables.$clr-light;
+  border-radius: 20px;
+  transform: translateX(-50%);
+  transition: opacity .2s;
+}
+@media (max-width: 1200px) {
+  .mouse__scroll-down {
+    display: none;
+  }
+}
+
+.scroll-down__scroller {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  background: variables.$clr-light;
+  width: 3px;
+  height: 8px;
+  border-radius: 50px;
+  transform: translateX(-50%);
+  animation: scroll 2s ease-out infinite;
+}
+
+@keyframes scroll {
+  25% {
+    opacity: 1;
+    top: 8px;
+  }
+
+  50% {
+    opacity: 0;
+    top: 12px;
+  }
+
+  100% {
+    opacity: 0;
+    top: 12px;
+  }
+}

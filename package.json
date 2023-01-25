@@ -1,0 +1,16 @@
+{
+  "name": "fl4wless-de-website",
+  "version": "2.0.0",
+  "description": "My personal web presence.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/scss/:public/assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "sass": "^1.52.2"
+  }
+}

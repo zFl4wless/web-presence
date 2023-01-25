@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Primary Meta Tags -->
+    <title>Fl4wless — Personal portfolio</title>
+    <meta name="title" content="Fl4wless — Personal portfolio">
+    <meta name="description" content="Only click me if you have nothing else to do ;)">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fl4wless.de/">
+    <meta property="og:title" content="Fl4wless — Personal portfolio">
+    <meta property="og:description" content="Only click me if you have nothing else to do ;)">
+    <meta property="og:image" content="https://fl4wless.de/assets/img/fl4wless-banner.png">
+    <meta name="theme-color" content="#6a5acd">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fl4wless.de/">
+    <meta property="twitter:title" content="Fl4wless — Personal portfolio">
+    <meta property="twitter:description" content="Only click me if you have nothing else to do ;)">
+    <meta property="twitter:image" content="https://fl4wless.de/assets/img/fl4wless-banner.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="hero__header">
+            <h3 class="hero__logo-name">Fl4wless</h3>
+
+            <div class="hero__socials">
+                <a target="_blank" href="https://github.com/zFl4wless">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a target="_blank" href="https://instagram.com/zfl4wless">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="section section--hero" id="home">
+            <div class="hero__title">
+                <h1 class="hero__heading">Fl<span class="special-letter">4</span>wless</h1>
+                <div class="hero__separator">
+                    <span class="hero__separator-line"></span>
+                    <span class="hero__separator-line"></span>
+                </div>
+                <h2 class="hero__description">student / developer</h2>
+            </div>
+
+            <div class="hero__tagcloud">
+                <span class="sphere" style="transition: unset; color: rgb(248, 248, 255);"></span>
+            </div>
+
+            <!-- Scroll Down Animation -->
+            <div class="mouse__scroll-down">
+                <span class="scroll-down__scroller"></span>
+            </div><!-- Scroll Down Animation End -->
+        </section><!-- Hero Section End -->
+
+        <!-- Project Section -->
+        <section class="section section--projects" id="projects">
+            <!-- Projects Search Bar -->
+            <div class="projects__search">
+                <input type="search" placeholder="Search for tags...">
+                <div class="icon__wrapper">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+            </div><!-- Projects Search Bar End -->
+
+            <!-- Projects Not Found -->
+            <div class="projects__not-found">
+                <h2 class="projects__not-found-title">No projects found</h2>
+                <p class="projects__not-found-description">
+                    Please try to search for another tag.
+                </p>
+            </div><!-- Projects Not Found End -->
+
+            <!-- Projects Album -->
+            <div class="projects__album">
+
+                <!-- Project Item -->
+                <a href="https://github.com/zFl4wless/web-presence">
+                    <div class="projects__album-item">
+                        <!-- Project Card -->
+                        <div class="project__card"
+                            style="background-image: linear-gradient(rgba(32, 34, 37, 0.9), rgba(32, 34, 37, 0.9));">
+                            <div class="project__card-content">
+                                <h2>Personal Web Presence</h2>
+                                <div class="content-info">
+                                    <span class="content-title">
+                                        <ion-icon name="sunny-outline"></ion-icon>Project Showcase
+                                    </span>
+                                    <span class="content-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>Nov 2021 - Present
+                                    </span>
+                                </div>
+                                <p>You are on my web presence right now! ;) If you click this card you can check out
+                                    the source code to this page on GitHub.</p>
+                                <ul class="project__card-tags">
+                                    <li>HTML</li>
+                                    <li>SASS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div><!-- Project Card End -->
+                    </div>
+                </a><!-- Project Item End -->
+
+                <!-- Project Item -->
+                <a href="https://hondicard.metahond.codes">
+                    <div class="projects__album-item">
+                        <!-- Project Card -->
+                        <div class="project__card" style="background-image: linear-gradient(rgba(32, 34, 37, 0.9), rgba(32, 34, 37, 0.9)),
+                          url('assets/img/project-thumbnails/hondicard.png'); background-size: 360px;">
+                            <div class="project__card-content">
+                                <h2>Hondicard</h2>
+                                <div class="content-info">
+                                    <span class="content-title">
+                                        <ion-icon name="sunny-outline"></ion-icon>Card-Based Learning App
+                                    </span>
+                                    <span class="content-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>Aug 2022 - Present
+                                    </span>
+                                </div>
+                                <p>A collaborative learning plattform with a card-based learning system. You can also
+                                    share your cards with your
+                                    friends.</p>
+                                <ul class="project__card-tags">
+                                    <li>Metahond</li>
+                                    <li>Learning App</li>
+                                    <li>Typescript</li>
+                                </ul>
+                            </div>
+                        </div><!-- Project Card End -->
+                    </div>
+                </a><!-- Project Item End -->
+
+                <!-- Project Item -->
+                <a href="https://github.com/zFl4wless/advent-of-code-2022">
+                    <div class="projects__album-item">
+                        <!-- Project Card -->
+                        <div class="project__card" style="background-image: linear-gradient(rgba(32, 34, 37, 0.9), rgba(32, 34, 37, 0.9)),
+                          url('assets/img/project-thumbnails/advent-of-code.png'); background-size: 260px;">
+                            <div class="project__card-content">
+                                <h2>Advent Of Code 2022</h2>
+                                <div class="content-info">
+                                    <span class="content-title">
+                                        <ion-icon name="sunny-outline"></ion-icon>Coding Advent Calendar
+                                    </span>
+                                    <span class="content-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>Aug 2022 - Present
+                                    </span>
+                                </div>
+                                <p>
+                                    AdventOfCode is a advent calendar that
+                                    provides you with amazing cristmas puzzles. Click this card to see
+                                    my solutions!
+                                </p>
+                                <ul class="project__card-tags">
+                                    <li>Advent</li>
+                                    <li>Puzzles</li>
+                                    <li>Typescript</li>
+                                    <li>Deno</li>
+                                </ul>
+                            </div>
+                        </div><!-- Project Card End -->
+                    </div>
+                </a><!-- Project Item End -->
+            </div><!-- Projects Album End -->
+        </section><!-- Project Section End -->
+
+        <footer class="footer">
+            <p>Copyright &copy; <span class="current-year"></span> All Rights Reserved by Fl4wless</p>
+            <a href="/imprint" target="_blank">Imprint</a>
+        </footer>
+    </main>
+
+    <!-- Rotating Text Sphere -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="assets/js/tagcloud.js"></script>
+
+    <!-- Ionicons Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Other Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@use "../abstracts/variables";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: variables.$clr-light-gray;
+  padding: 1.2em 1.8em;
+  font-size: .8rem;
+
+  a {
+    transition: .2s;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    align-items: flex-start;
+    gap: .4em;
+  }
+}

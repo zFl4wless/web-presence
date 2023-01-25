@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: variables.$clr-dark;
+  color: variables.$clr-light;
+  font-family: variables.$ff-main;
+  font-weight: 500;
+}
+
+main {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

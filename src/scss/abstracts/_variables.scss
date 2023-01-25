@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Koulen';
+    src: url('../fonts/Koulen.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans.ttf');
+}
+
+/* Colors */
+$clr-accent: #6a5acd;
+$clr-secondary: #8086BB;
+$clr-light: #F8F8FF;
+$clr-light-gray: #939393;
+$clr-gray: #2d3034;
+$clr-bluish-dark: #292a2d;
+$clr-dark: #202225;
+
+$clr-success: #39bd43;
+$clr-warning: #ffbc2b;
+$clr-danger: #ff644c;
+
+/* Fonts */
+$ff-main: 'Open Sans', sans-serif;
+$ff-heading: 'Koulen', sans-serif;
+$ff-code: 'Source Code Pro', monospace;

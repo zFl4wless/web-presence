@@ -1,0 +1,8 @@
+# node_modules folder
+/node_modules/
+
+# .idea folder
+.idea
+
+# ignore all css map files
+*.map

@@ -1,0 +1,112 @@
+@use '../abstracts/variables';
+
+/* Section Specification */
+.section--projects {
+  padding: 4em 8em;
+  min-height: 80%;
+}
+@media (max-width: 1200px) {
+  .section--projects {
+    padding: 4em;
+  }
+}
+@media (max-width: 680px) {
+  .section--projects {
+    padding: 1em;
+  }
+}
+
+.projects__search {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.2em;
+  border: 4px solid variables.$clr-dark;
+  transition: all .5s;
+
+  input {
+    width: 100%;
+    height: 42.5px;
+    background: variables.$clr-gray;
+    color: variables.$clr-light-gray;
+    padding: 0 20px;
+    font-size: 1em;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 0 rgb(0 0 0 / 8%);
+  }
+
+  .icon__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    background: variables.$clr-gray;
+    color: variables.$clr-light;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all .5s;
+  }
+}
+
+.projects__search-focus {
+  width: 300px;
+  cursor: pointer;
+
+  input {
+    display: block;
+  }
+
+  .icon__wrapper {
+    background: variables.$clr-accent;
+    color: variables.$clr-light;
+  }
+}
+@media (max-width: 425px) {
+  .projects__search-focus {
+    width: 100% ;
+  }
+}
+
+/* Tags Not Found Message */
+.projects__not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  color: variables.$clr-light-gray;
+  text-align: center;
+  border: 2px solid variables.$clr-gray;
+
+  .projects__not-found-description {
+    font-weight: lighter;
+    font-size: .9rem;
+  }
+}
+
+/* Projects Album */
+.projects__album {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+@media (max-width: 1440px) {
+  .projects__album {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .projects__album {
+    grid-template-columns: 1fr;
+  }
+}
